@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     let button = UIButton(type: .system)
     button.frame = CGRect(x: 50, y: 50, width: 100, height: 40)
-    button.backgroundColor = UIColor.red()
+    button.backgroundColor = UIColor.red
     //uicontrol state
     button.setTitle("Test", for: UIControlState(rawValue: UInt(0)))
     button.addTarget(self, action: #selector(ViewController.buttonTapped), for: .touchUpInside)
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  func buttonTapped() {
+  @objc func buttonTapped() {
     print("button tapped")
   }
 }
